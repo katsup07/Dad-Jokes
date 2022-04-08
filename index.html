@@ -16,7 +16,11 @@
         </div>
         <button class="getJoke hidden">Get A Joke</button>
     </div>
+
     <style>
+        body {
+            background: rgb(211, 132, 102)
+        }
 
         h1 {
             text-align: center;
@@ -24,24 +28,37 @@
             margin: 10px;
         }
 
+        p {
+            color: rgb(46, 46, 49);
+        }
+
         .wrapper {
             text-align: center;
             background: rgb(255, 255, 255);
+            border-radius: 15px;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 15px 15px 15px 14px rgb(43, 43, 44);
         }
 
         .joke {
             font-size: 3.5rem;
             font-weight: 900;
         }
-        
+
+
         button {
+            background-color: rgb(84, 93, 171);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 2px 3px 5px 4px rgb(43, 43, 44);
             animation: fadeIn linear 1s;
             -webkit-animation: fadeIn linear 1s;
             -moz-animation: fadeIn linear 1s;
             -o-animation: fadeIn linear 1s;
             -ms-animation: fadeIn linear 1s;
         }
-        
+
+
         .hidden {
             display: none;
             /* element does not appear on page */
@@ -96,9 +113,8 @@
                 opacity: 1;
             }
         }
-        
-        </style>
+    </style>
     <script src="./jokes.js"></script>
-</body>
+    </body>
 
 </html>
