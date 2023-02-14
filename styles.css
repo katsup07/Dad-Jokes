@@ -231,6 +231,9 @@ th {
 .box,
 .wrapper {
     box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.08653);
+    border: 1px solid var(--pink);
+    border-radius: 0.5rem;
+    width: 60%;
 }
 
 a {
@@ -238,6 +241,14 @@ a {
     text-decoration-color: var(--yellow);
 }
 
+.girl-picture-container{
+  text-align: center;
+}
+.girl-picture{
+  width: 15%;
+  border-radius: 0.2rem;
+  border: 1px solid var(--pink);
+}
 
 a.button,
 button,
@@ -250,6 +261,14 @@ input[type="button"] {
     text-decoration: none;
     font-weight: 600;
     font-size: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+  background-color: white;
+  color: var(--pink);
+  border: 2px solid var(--pink);
 }
 
 :focus {
@@ -284,6 +303,12 @@ h6 {
     text-shadow: var(--text-shadow);
 }
 
+h1{
+  font-size: 8rem;
+  text-align: center;
+  margin: 0;
+}
+
 .wrapper h1,
 .wrapper h2,
 .wrapper h3,
@@ -292,4 +317,17 @@ h6 {
 .wrapper h6 {
     color: var(--black);
     text-shadow: none;
+}
+
+@media screen and (max-width: 1000px){
+  h1{
+    font-size: 5rem;
+  }
+  .wrapper{
+    font-size: 1.2rem;
+  }
+
+  button{
+    font-size: 1rem;
+  }
 }
